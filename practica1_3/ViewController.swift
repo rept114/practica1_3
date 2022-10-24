@@ -33,5 +33,13 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func doTapModificar2(_ sender: Any) {
+        lblAdvertencia.isHidden = true
+        if swPermisoNavegacion.isOn {
+            performSegue(withIdentifier: "goToModificar2", sender: self)
+        } else {
+            lblAdvertencia.isHidden = false
+        }
+    }
 }
 

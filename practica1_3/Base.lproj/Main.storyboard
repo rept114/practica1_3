@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SpC-fw-0vF">
-                                <rect key="frame" x="60" y="128" width="255" height="36"/>
+                                <rect key="frame" x="20" y="128" width="335" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -28,31 +28,50 @@
                                 <rect key="frame" x="60" y="184" width="51" height="31"/>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tienes que prender el switch para navegar a la siguiente pantalla" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U7V-65-tQK">
-                                <rect key="frame" x="20" y="254.99999999999997" width="335" height="40.666666666666657"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="20" y="235" width="335" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <color key="textColor" red="0.67521454020000005" green="0.085099615710000007" blue="0.095653188080000007" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dfd-GE-Byo">
-                                <rect key="frame" x="40" y="335.66666666666669" width="111" height="30"/>
+                                <rect key="frame" x="40" y="287" width="124" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Ir al siguiente vc"/>
                                 <connections>
                                     <action selector="doTapModificar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PEA-1E-Jzr"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RtY-6D-RZu">
+                                <rect key="frame" x="20" y="441" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="doTapModificar2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jIT-gq-9B8"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OyH-Fn-yPm">
+                                <rect key="frame" x="20" y="400" width="335" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OyH-Fn-yPm" secondAttribute="trailing" constant="20" id="9fz-O4-o4Z"/>
                             <constraint firstItem="wln-bP-G0e" firstAttribute="top" secondItem="SpC-fw-0vF" secondAttribute="bottom" constant="20" id="9n9-we-wMU"/>
-                            <constraint firstItem="U7V-65-tQK" firstAttribute="top" secondItem="wln-bP-G0e" secondAttribute="bottom" constant="40" id="ONc-hN-pFL"/>
+                            <constraint firstItem="U7V-65-tQK" firstAttribute="top" secondItem="wln-bP-G0e" secondAttribute="bottom" constant="20" id="ONc-hN-pFL"/>
                             <constraint firstItem="SpC-fw-0vF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="QYF-fa-U67"/>
                             <constraint firstItem="Dfd-GE-Byo" firstAttribute="top" secondItem="U7V-65-tQK" secondAttribute="bottom" constant="40" id="S1W-fI-JOk"/>
                             <constraint firstItem="U7V-65-tQK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="eXG-kB-9E4"/>
                             <constraint firstItem="Dfd-GE-Byo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="hPJ-Rx-Ct4"/>
+                            <constraint firstItem="OyH-Fn-yPm" firstAttribute="top" secondItem="Dfd-GE-Byo" secondAttribute="bottom" constant="80" id="hST-By-O9G"/>
+                            <constraint firstItem="OyH-Fn-yPm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="mBh-KY-fs2"/>
+                            <constraint firstItem="RtY-6D-RZu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ndK-N3-kLR"/>
                             <constraint firstAttribute="trailing" secondItem="U7V-65-tQK" secondAttribute="trailing" constant="20" id="rfi-qI-RuO"/>
-                            <constraint firstItem="SpC-fw-0vF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="suN-vR-eFN"/>
+                            <constraint firstItem="RtY-6D-RZu" firstAttribute="top" secondItem="OyH-Fn-yPm" secondAttribute="bottom" constant="20" id="s9c-Kt-VOC"/>
+                            <constraint firstItem="SpC-fw-0vF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="suN-vR-eFN"/>
                             <constraint firstItem="wln-bP-G0e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="tDx-2y-w31"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SpC-fw-0vF" secondAttribute="trailing" constant="60" id="v6r-pC-bPH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SpC-fw-0vF" secondAttribute="trailing" constant="20" id="v6r-pC-bPH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -63,16 +82,57 @@
                         <outlet property="lblTexto" destination="SpC-fw-0vF" id="wGz-Ff-aV0"/>
                         <outlet property="swPermisoNavegacion" destination="wln-bP-G0e" id="UpQ-Qi-ly3"/>
                         <segue destination="vhZ-wd-ULh" kind="show" id="dnv-0X-ze8"/>
+                        <segue destination="s46-8G-0hu" kind="show" identifier="goToModificar2" id="Cn9-R2-NHn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="474" y="142"/>
         </scene>
-        <!--View Controller-->
+        <!--Modificar Controller2-->
+        <scene sceneID="1bx-Lb-avG">
+            <objects>
+                <viewController id="s46-8G-0hu" customClass="ModificarController2" customModule="practica1_3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bje-rS-CyU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="toW-3L-0Ca">
+                                <rect key="frame" x="20" y="138" width="68" height="30"/>
+                                <state key="normal" title="Actualizar"/>
+                                <connections>
+                                    <action selector="doTapModificar2:" destination="s46-8G-0hu" eventType="touchUpInside" id="5PM-jd-fZG"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dop-PD-JfY">
+                                <rect key="frame" x="20" y="88" width="335" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="toW-3L-0Ca" firstAttribute="leading" secondItem="htm-hL-bna" secondAttribute="leading" constant="20" id="5EB-99-ucH"/>
+                            <constraint firstItem="toW-3L-0Ca" firstAttribute="top" secondItem="dop-PD-JfY" secondAttribute="bottom" constant="20" id="Ryf-Ol-fai"/>
+                            <constraint firstItem="htm-hL-bna" firstAttribute="trailing" secondItem="dop-PD-JfY" secondAttribute="trailing" constant="20" id="ajh-g0-beR"/>
+                            <constraint firstItem="dop-PD-JfY" firstAttribute="top" secondItem="htm-hL-bna" secondAttribute="top" id="hZy-2I-EPl"/>
+                            <constraint firstItem="dop-PD-JfY" firstAttribute="leading" secondItem="htm-hL-bna" secondAttribute="leading" constant="20" id="kw4-DD-Nq8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="htm-hL-bna"/>
+                    </view>
+                    <connections>
+                        <outlet property="txtTexto" destination="dop-PD-JfY" id="hNt-tC-3JY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HfY-Bw-N7u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1262" y="579"/>
+        </scene>
+        <!--Modificar Controller-->
         <scene sceneID="cXS-a2-eCI">
             <objects>
-                <viewController id="vhZ-wd-ULh" sceneMemberID="viewController">
+                <viewController id="vhZ-wd-ULh" customClass="ModificarController" customModule="practica1_3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tk7-Ub-DWZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -86,6 +146,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Erz-yB-o2h">
                                 <rect key="frame" x="20" y="158" width="68" height="30"/>
                                 <state key="normal" title="Actualizar"/>
+                                <connections>
+                                    <action selector="doTapActualizar:" destination="vhZ-wd-ULh" eventType="touchUpInside" id="1u3-ZJ-xz4"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -98,10 +161,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="DgN-4s-x0R"/>
                     </view>
+                    <connections>
+                        <outlet property="txtTexto" destination="OKb-CZ-gzr" id="toZ-SO-fBL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Xb-aZ-kKN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1150" y="142"/>
+            <point key="canvasLocation" x="1263" y="-88"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jdH-hg-BX9">
